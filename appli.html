@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ma Calculatrice</title>
+
+    <link rel="stylesheet" href="appli.css">
+</head>
+
+<body>
+
+    <div class="calculatrice">
+
+       <input type="text" id="ecran" inputmode="decimal">
+
+        <div class="boutons">
+
+            <button onclick="effacer()">🔙</button>
+            <button onclick="supprimer()">←</button>
+            <button onclick="ajouter('%')">%</button>
+            <button onclick="ajouter('/')">÷</button>
+
+            <button onclick="ajouter('7')">7</button>
+            <button onclick="ajouter('8')">8</button>
+            <button onclick="ajouter('9')">9</button>
+            <button onclick="ajouter('*')">×</button>
+
+            <button onclick="ajouter('4')">4</button>
+            <button onclick="ajouter('5')">5</button>
+            <button onclick="ajouter('6')">6</button>
+            <button onclick="ajouter('-')">−</button>
+
+            <button onclick="ajouter('1')">1</button>
+            <button onclick="ajouter('2')">2</button>
+            <button onclick="ajouter('3')">3</button>
+            <button onclick="ajouter('+')">+</button>
+
+            <button onclick="ajouter('0')">0</button>
+            <button onclick="ajouter('.')">.</button>
+            <button class="egal" onclick="calculer()">=</button>
+
+        </div>
+
+    </div>
+
+    <script src="appli.js"></script>
+
+</body>
+</html>
